@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ISLA - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- TOP NAVBAR -->
+  <div class="top-nav">
+    <div class="brand">ISLA <span>Assistant</span></div>
+    <div class="top-nav-links">
+      <a href="index.html" class="nav-link">Chat</a>
+      <a href="quiz.html" class="nav-link">Quiz / Exam</a>
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="history.html" class="nav-link">History</a>
+      <a href="flashcards.html" class="nav-link">Flashcards</a>
+      <a href="admin.html" class="nav-link">Admin</a>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="container">
+    <h1>Learning Dashboard</h1>
+
+    <div id="dashboard-root"></div>
+
+    <h3>Score Over Time</h3>
+    <canvas id="scoreChart" style="max-width: 100%;"></canvas>
+
+    <h3>Difficulty Distribution</h3>
+    <canvas id="difficultyChart" style="max-width: 100%;"></canvas>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
